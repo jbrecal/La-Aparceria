@@ -1,0 +1,59 @@
+<ion-content>
+  <div class="container">
+    <p class="titulo">Registro de usuario</p>
+    <ion-list>
+      <ion-item>
+        <ion-select label="Selecciona tu empresa" [(ngModel)]="selectedCompany" placeholder="Empresa" required>
+          <ion-select-option *ngFor="let company of filteredCompanies" [value]="company.id">
+            {{ company.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-searchbar placeholder="Busca aquí tu empresa" (ionInput)="filterCompanies()"></ion-searchbar>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="container_2">
+    <ion-card>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Nombre" placeholder="Introduce tu nombre" [(ngModel)]="nombre" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Apellidos" placeholder="Introduce tus apellidos" [(ngModel)]="apellidos" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Teléfono móvil" type="number" placeholder="+XX XXX XX XX XX" [(ngModel)]="telefono" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Contraseña" type="password" placeholder="Introduce tu contraseña" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Repite tu contraseña" type="password" placeholder="Repite tu contraseña" [(ngModel)]="confirmPassword" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Email" type="email" placeholder="email@domain.com" labelPlacement="floating"
+            helperText="Enter a valid email" errorText="Invalid email" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Dirección" placeholder="Introduce tu dirección" [(ngModel)]="direccion" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Código Postal" placeholder="Introduce tu código postal" [(ngModel)]="codigoPostal" required></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+    <ion-button mode="ios" class="button" shape="round" color="oliva" (click)="onSubmit()">Enviar</ion-button>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

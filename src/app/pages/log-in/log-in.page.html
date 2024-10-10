@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="container_logo">
+    <img class="logo" src="/assets/iconos/logoPrimario.png" alt="">
+  </div>
+  
+  <div class="total">
+    <div class="container">
+    
+    </div>
+    <ion-card>
+      <ion-card-title>
+        <p>Ingrese su nombre de usuario y contraseña</p>
+      </ion-card-title>
+  
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">
+            <p>Usuario</p>
+          </ion-label>
+          <ion-input [clearInput]="true" type="text" [(ngModel)]="username" required></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">
+            <p>Contraseña</p>
+          </ion-label>
+          <ion-input [clearInput]="true" type="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+    <div class="margin">
+      <ion-button mode="ios" class="loggin_button" color="oliva" shape="round" (click)="login()">Iniciar sesión</ion-button>
+  
+      <div class="frases_adicionales">
+        <ion-button mode="ios" id="present-alert" fill="clear" color="oliva">¿Olvidaste tu contraseña?</ion-button>
+        <ion-alert mode="ios" trigger="present-alert" header="Introduce tu email" [buttons]="alertButtons" [inputs]="alertInputs"></ion-alert>
+  
+        <ion-button mode="ios" routerLink="/tabs/register" fill="clear" color="oliva">Crear cuenta</ion-button>
+      </div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>
+</ion-content>

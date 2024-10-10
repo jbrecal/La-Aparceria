@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+.container_2{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.button{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    
+}
+
+@media (min-width: 1181px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .container_2 {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .titulo{
+        padding-top: 2rem;
+    }
+}
+.titulo{
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-bottom: 2rem;;
+}

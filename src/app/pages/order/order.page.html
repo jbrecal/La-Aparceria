@@ -1,0 +1,136 @@
+<app-menu></app-menu>
+<ion-content>
+  <ion-grid>
+    <!-- Header Section -->
+    <section class="banner_1">
+      <ion-row>
+        <ion-col size="12">
+          <div class="titulo">
+            <p>Nuestro menú diario</p>
+          </div>
+          <div class="subtitulo">
+            <p>Pedido para el lunes 27 de mayo 2024. Hora máxima para pedir 11:00</p>
+          </div>
+        </ion-col>
+        <!-- Day Selector -->
+        <ion-col size="12">
+          <div class="segment">
+            <ion-segment mode="ios" [(ngModel)]="selectedDay">
+              <ion-segment-button value="lunes"><p class="dia">26.05</p><p>Lunes</p></ion-segment-button>
+              <ion-segment-button value="martes"><p class="dia">27.05</p><p>Martes</p></ion-segment-button>
+              <ion-segment-button value="miercoles"><p class="dia">28.05</p><p>Miércoles</p></ion-segment-button>
+              <ion-segment-button value="jueves"><p class="dia">29.05</p><p>Jueves</p></ion-segment-button>
+              <ion-segment-button value="viernes"><p class="dia">30.05</p><p>Viernes</p></ion-segment-button>
+            </ion-segment>
+          </div>
+        </ion-col>
+      </ion-row>
+    </section>
+
+    <!-- Menu Selector -->
+    <section class="banner_1_b">
+      <div class="segment_menu">
+        <ion-segment mode="ios" [(ngModel)]="selectedMenu" (ionChange)="menuChanged()">
+          <ion-segment-button value="medio-menu"><p>Medio menú (8€)</p></ion-segment-button>
+          <ion-segment-button value="menu-completo"><p>Menú completo (12€)</p></ion-segment-button>
+        </ion-segment>
+        <br>
+        <ng-container *ngIf="selectedMenu === 'medio-menu'">
+          <ion-segment mode="ios" [(ngModel)]="selectedSegment2" (ionChange)="segmentChanged($event)" value="medio">
+            <ion-segment-button class="ion-padding" value="primeroMedio"><p>Primer plato</p></ion-segment-button>
+            <ion-segment-button class="ion-padding" value="postreMedio"><p>Postre</p></ion-segment-button>
+            <ion-segment-button class="ion-padding" value="extraMedio"><p>Extra</p></ion-segment-button>
+          </ion-segment>
+        </ng-container>
+        <ng-container *ngIf="selectedMenu === 'menu-completo'">
+          <ion-segment mode="ios" [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)" value="completo">
+            <ion-segment-button class="ion-padding" value="primeroCompleto"><p>1º plato</p></ion-segment-button>
+            <ion-segment-button class="ion-padding" value="segundoCompleto"><p>2º plato</p></ion-segment-button>
+            <ion-segment-button class="ion-padding" value="postreCompleto"><p>Postre</p></ion-segment-button>
+            <ion-segment-button class="ion-padding" value="extraCompleto"><p>Extra</p></ion-segment-button>
+          </ion-segment>
+        </ng-container>
+      </div>
+    </section>
+
+  
+    <div [ngSwitch]="selectedSegment">
+      <ng-container *ngFor="let type of ['primeroCompleto', 'segundoCompleto', 'postreCompleto', 'extraCompleto']">
+        <div class="description" *ngSwitchCase="type">
+          <section class="banner_2">
+            <ion-row>
+              <ion-col size="12" size-lg="3" size-md="6" size-sm="4" size-xs="6" *ngFor="let menus of (type === 'primeroCompleto' ? primero : type === 'segundoCompleto' ? segundo : type === 'postreCompleto' ? postre : extra) | async" class="card-col">
+                <ion-card class="card-with-fab" mode="md">
+                  <img (click)="abrirModal(menus)" class="card-img" alt="" [src]="menus.img" />
+                  <ion-card-header>
+                    <ion-card-title (click)="abrirModal(menus)" color="oliva" class="card-titulo">{{menus.titulo}}</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content (click)="abrirModal(menus)" class="card-content">
+                    {{menus.descripcion}}<br>
+                    <ion-chip color="coral" class="card-chip">{{menus.gluten}}</ion-chip>
+                    <ion-chip color="amarillo" class="card-chip">{{menus.lactosa}}</ion-chip>
+                  </ion-card-content>
+                  <div class="fab-container">
+                    <ion-fab vertical="bottom" horizontal="bottom">
+                      <ion-fab-button size="small" color="coral" (click)="updateFabClickCount(menus, 'remove') ">
+                        <ion-icon name="remove"></ion-icon>
+                      </ion-fab-button>
+                    </ion-fab>
+                    <ion-fab vertical="bottom" horizontal="end">
+                      <ion-fab-button size="small" color="oliva" (click)="updateFabClickCount(menus, 'add')">
+                        <ion-icon class="icon_count" name="add"></ion-icon>
+                        <span class="count" *ngIf="menus.clickCount > 0">
+                          <p>{{ menus.clickCount }}</p>
+                        </span>
+                      </ion-fab-button>
+                    </ion-fab>
+                  </div>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </section>
+        </div>
+      </ng-container>
+    </div>
+
+    <div [ngSwitch]="selectedSegment2">
+      <ng-container *ngFor="let type of ['primeroMedio', 'postreMedio', 'extraMedio']">
+        <div class="description" *ngSwitchCase="type">
+          <section class="banner_2">
+            <ion-row>
+              <ion-col size="12" size-lg="3" size-md="6" size-sm="4" size-xs="6" *ngFor="let menus of (type === 'primeroMedio' ? menu : type === 'postreMedio' ? postre : extra) | async" class="card-col">
+                <ion-card class="card-with-fab">
+                  <img (click)="abrirModal(menus)" class="card-img" alt="" [src]="menus.img" />
+                  <ion-card-header>
+                    <ion-card-title (click)="abrirModal(menus)" color="oliva" class="card-titulo">{{menus.titulo}}</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content (click)="abrirModal(menus)" class="card-content">
+                    {{menus.descripcion}}<br>
+                    <ion-chip color="coral" class="card-chip">{{menus.gluten}}</ion-chip>
+                    <ion-chip color="amarillo" class="card-chip">{{menus.lactosa}}</ion-chip>
+                  </ion-card-content>
+                  <div class="fab-container">
+                    <ion-fab vertical="bottom" horizontal="bottom">
+                      <ion-fab-button size="small" color="coral" (click)="updateFabClickCount(menus, 'remove')">
+                        <ion-icon name="remove"></ion-icon>
+                      </ion-fab-button>
+                    </ion-fab>
+                    <ion-fab vertical="bottom" horizontal="end">
+                      <ion-fab-button size="small" color="oliva" (click)="updateFabClickCount(menus, 'add')">
+                        <ion-icon class="icon_count" name="add"></ion-icon>
+                        <span class="count" *ngIf="menus.clickCount > 0">
+                          <p>{{ menus.clickCount }}</p>
+                        </span>
+                      </ion-fab-button>
+                    </ion-fab>
+                  </div>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </section>
+        </div>
+      </ng-container>
+    </div>
+  </ion-grid>
+  <app-footer></app-footer>
+</ion-content>

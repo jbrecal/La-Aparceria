@@ -1,0 +1,79 @@
+<header class="web">
+  <div id="container">
+    <ion-buttons slot="start" mode="ios">
+      <ion-menu-button color="beige"></ion-menu-button>
+      <ion-avatar class="avatar" mode="ios">
+        <a href="/tabs/home">
+          <img class="imagen-avatar" src="/assets/avatarAparceria.png" alt="Avatar">
+      </a>
+      </ion-avatar>
+      <a href="/tabs/home">
+      <p class="logo_tit">LA APARCERÍA</p></a>
+    </ion-buttons>
+</div>
+
+
+  <nav class="flex__centrado mayuscula">
+      <a href="/tabs/order">Pide tu<br> menú</a>
+      <a href="/tabs/how">¿Cómo <br>funciona?</a>
+      <a href="/tabs/business">La Aparcería<br> empresas</a>
+      <a href="/tabs/who">Sobre<br> nosotros</a>
+      <a href="/tabs/faq">Preguntas<br>frecuentes</a>
+  </nav>
+
+  <div class="flex__der">
+    <ion-button fill="clear" routerLink="tabs/loggin">
+      <ion-icon color="beige" slot="icon-only" name="person-outline"></ion-icon>
+    </ion-button>
+      <ion-button fill="clear" routerLink="tabs/cart">
+        <ion-icon color="beige" slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+   
+  </div>
+</header>
+
+<div id="container">
+  <ion-menu side="start" menuId="primerMenu" contentId="main-content">
+    <ion-header class="app">
+      <ion-toolbar color="primario">
+        <ion-avatar></ion-avatar>
+        <ion-title class="titulo"><p>La Aparcería</p></ion-title>
+        <ion-avatar class="avatar" slot="start">
+          <img class="imagen-avatar" src="/assets/avatarAparceria.png">
+        </ion-avatar>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        
+        <ion-menu-toggle mode="ios" *ngFor="let c of componentes | async">
+          <ion-item [routerLink]="c.redirectTo">
+            <ion-icon slot="start" [name]="c.icon" color="oliva"></ion-icon>
+            <ion-label><p>{{c.name}}</p></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+    <ion-footer class="ion-padding">
+      <ion-item button (click)="abrirSesion()">
+        <ion-icon name="log-in-outline" color="oliva"></ion-icon>
+        <ion-label><p>Iniciar sesión</p></ion-label>
+      </ion-item>
+      <ion-item button (click)="logout()">
+        <ion-icon name="log-out-outline" color="oliva"></ion-icon>
+        <ion-label><p>Cerrar sesión</p></ion-label>
+      </ion-item>
+    </ion-footer>
+  </ion-menu>
+
+  <ion-header mode="ios">
+    <ion-toolbar color="primario" mode="ios">
+      <ion-buttons slot="start" mode="ios">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title><p>La Aparcería</p></ion-title>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
+

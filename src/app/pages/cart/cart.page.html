@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Carrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list class="listado" *ngIf="selectedPlatos.length > 0; else emptyCart">
+    <h3>Resumen</h3>
+    <ion-item *ngFor="let plato of selectedPlatos; let i = index">
+      <ion-avatar slot="start">
+        <img [src]="plato.img">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ plato.titulo }}</h2>
+        <p>{{ plato.descripcion }}</p>
+      </ion-label>
+      <ion-badge shape="round" color="oliva" slot="end">{{ plato.clickCount }}</ion-badge>
+
+      <!-- Botón para editar el plato
+      <ion-button (click)="editPlato(i)" slot="end" fill="clear" color="primary">
+        <ion-icon name="create"></ion-icon>
+      </ion-button> -->
+
+     
+      <ion-button class="trash" (click)="deletePlato(i)" slot="end" fill="clear" color="coral" >
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-button class="pagar" mode="ios" color="oliva" shape="round">
+      Pagar
+    </ion-button>
+  </ion-list>
+  
+    <ion-toolbar class="total">
+      <ion-title>Total: {{ calculateTotal() }}</ion-title>
+     
+    </ion-toolbar>
+
+  
+  
+  <ng-template #emptyCart>
+    <ion-text class="ion-text-center">
+      <h3>Aun no has seleccionado ningún plato de tu menú</h3>
+      <div class="button">
+        <ion-button mode="ios" size="default" color="oliva" shape="round" routerLink="/tabs/order">Pide tu menú</ion-button>
+      </div> 
+    </ion-text>
+  </ng-template>
+  <app-footer></app-footer>
+  
+</ion-content>

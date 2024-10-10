@@ -1,0 +1,218 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner_1 {
+  padding-bottom: 2rem;
+
+
+}
+
+.titulo p {
+
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 1.5rem;
+
+
+
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 2rem;
+
+}
+
+.description_2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+ion-segment-button {
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+@media (min-width: 1181px) {  //para web
+  .banner_1 {
+    padding-top: 9rem;
+    width: 60%;
+    margin: 0 auto;
+
+  }
+  .banner_2_margen {
+    width: 65%;
+    margin: 0 auto; 
+  }
+
+  ion-segment-button {
+    font-size: 1rem;
+  }
+
+  ion-card {
+    width: 300px;
+    height: 500px;
+  }
+
+  ion-card-content {
+    padding: 1rem;
+  }
+
+  ion-card-subtitle {
+    height: 40px;
+  }
+ .col_a{
+  display: flex;
+  justify-content: center;
+ }
+.col_b{
+  display: flex;
+  justify-content: center;
+}
+.banner_2{
+  padding-bottom: 2rem;
+}
+.banner_3{
+  padding-top: 3rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+}
+
+@media (max-width: 1181px) {   //para movil
+  .banner_1 {
+    padding-top: 6rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .banner_2_margen {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .banner_3{
+    padding-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  ion-col {
+    padding: 0.4rem;
+  }
+
+  ion-card {
+    
+    height: 500px;
+  }
+  ion-card-content{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .banner_2{
+    padding-bottom: 2rem;
+  }
+}
+
+.icon_description {
+  padding-right: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #819d6c;
+}
+
+.segment {
+  background-color: #eeeeee;
+}
+
+.banner_2 {
+  background-color: #eeeeee;
+}
+
+ion-card-header {
+  padding: 0.2rem;
+}
+
+ion-card-title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+ion-card-subtitle {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #819d6c;
+}
+
+.banner_2_titulo {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+ion-card img{
+  width: 100%;
+}
+
+
+ion-label p{
+  font-size: 1.1rem;
+}
+.ion-padding{
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+ion-accordion {
+  margin: 0 auto;
+}
+
+ion-accordion.accordion-expanding,
+ion-accordion.accordion-expanded {
+  width: calc(100% - 32px);
+
+  margin: 16px auto;
+}
+
+ion-accordion.accordion-collapsing ion-item[slot='header'],
+ion-accordion.accordion-collapsed ion-item[slot='header'] {
+  --background: var(--ion-color-light);
+  --color: var(--ion-color-light-contrast);
+}
+
+ion-accordion.accordion-expanding ion-item[slot='header'],
+ion-accordion.accordion-expanded ion-item[slot='header'] {
+  
+  --background: var(--ion-color-oliva);
+  --color: var(--ion-color-primary-contrast);
+}
+ion-accordion-group{
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+

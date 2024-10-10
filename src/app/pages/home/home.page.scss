@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+.background {
+    background-image: url('/assets/fondos/imagenPrincipal.jpg');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Hace que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    height: 700px;
+    /* Ajusta la altura del contenedor según sea necesario */
+    width: 100%;
+    /* Ajusta el ancho del contenedor según sea necesario */
+}
+
+@media (max-width: 768px) {
+    .background {
+        height: 400px;
+    }
+}
+
+@media (max-width:380px) {
+    .background {
+        height: 350px;
+
+    }
+}
+
+@media (min-width: 1181px) {
+    .banner_3_titulo img.logo {
+        width: 65%;
+        /* Adjusted width for larger screens */
+        height: auto;
+    }
+
+    .consulta {
+        padding-top: 6rem;
+    }
+}
+
+
+.boton_pedido {
+    font-family: 'Nunito', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    /* Para alinear horizontalmente el botón */
+    transform: translateX(-50%);
+    /* Para centrar horizontalmente el botón */
+    color: white;
+
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.titulo p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 3%;
+}
+
+.content p {
+    text-align: center;
+}
+
+.iconos_centrados {
+
+    text-align: center;
+
+}
+
+.iconos_centrados img {
+    width: 5rem;
+}
+
+.banner_2 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    ;
+}
+
+.tarjeta {
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+
+}
+
+.banner_3 {
+
+    width: 100%;
+    margin: 0 auto;
+    background-color: #819d6c;
+
+}
+
+.banner_3_margen {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+}
+
+.banner_3_titulo {
+    align-items: center;
+    text-align: center;
+}
+
+.banner_3_titulo h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 2%;
+    color: white;
+}
+
+.banner_3_titulo p {
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.banner_3_titulo img {
+
+    width: 85%;
+}
+.banner_4_color{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #eeeeee;
+
+}
+
+.slider-frame {
+    padding-right: 1.5rem;
+    width: 1300px;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 15%;
+    margin-left: 5rem;
+}
+
+.slider-frame p {
+
+    text-align: center;
+    padding-right: 59rem;
+    margin: 2%;
+    color: white;
+}
+
+.slider-frame h3 {
+    font-size: 1.2rem;
+    padding-left: 5rem;
+    font-weight: bold;
+    margin: 2%;
+    color: white;
+
+}
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.banner_4 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+
+}
+
+.iconos {
+    margin-bottom: 2%;
+}
+
+.fab {
+    padding-right: 1rem;
+}

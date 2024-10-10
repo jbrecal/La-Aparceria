@@ -1,0 +1,37 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+h3{
+    font-family: 'Nunito', sans-serif;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.button{
+    align-items: center;
+    padding-bottom: 1rem;
+}
+@media (min-width: 1181px) {
+    h3 {
+      padding-top: 4rem;
+      
+    }
+   .listado{
+    margin: 2rem;
+
+   }
+   .total{
+    padding-left: 1.5rem;
+   }
+}
+.trash{
+    margin-top: 1.2rem;
+}
+.total{
+    padding-bottom: 18rem;
+    
+}
+.pagar{
+    padding-top: 2rem;
+    padding-left: 1rem;
+}

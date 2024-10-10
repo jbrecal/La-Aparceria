@@ -1,0 +1,80 @@
+[
+    {
+        "img": "/assets/postres/flan.png",
+        "titulo": "Flan de huevo",
+        "subtitulo": "Postre",
+        "descripcion": "Con virutas de jamón ibérico y huevo rallado.",
+        "detalles": "El flan de huevo es un delicioso postre cremoso, perfecto para cualquier ocasión. Nuestra receta incluye virutas de jamón ibérico y huevo rallado para darle un toque especial.",
+        "ingredientes": "Ingredientes: huevos, leche, azúcar, vainilla.",
+        "calorias": "200 kcal",
+        "carbohidratos": "20g carbohidratos",
+        "proteina": "5g proteina",
+        "grasas": "10g grasas",
+        "grasas_saturadas": "6g grasas saturadas",
+        "azucares": "15g azucares",
+        "clickCount": "0"
+    },
+    {
+        "img": "/assets/postres/macedonia.jpg",
+        "titulo": "Macedonia de Frutas",
+        "subtitulo": "Fruta",
+        "descripcion": "Deliciosa combinación de frutas frescas.",
+        "detalles": "Nuestra macedonia de frutas es una opción refrescante y saludable para disfrutar en cualquier momento del día. Está hecha con una variedad de frutas frescas, como piña, sandía, melón, uvas y fresas.",
+        "ingredientes": "Ingredientes: piña, sandía, melón, uvas, fresas, jugo de limón.",
+        "calorias": "60 Kcal",
+        "carbohidratos": "15g carbohidratos",
+        "proteina": "1g proteina",
+        "grasas": "0g grasas",
+        "grasas_saturadas": "0g grasas saturadas",
+        "azucares": "12g azucares",
+        "clickCount": "0"
+    },
+    {
+        "img": "/assets/postres/platano.png",
+        "titulo": "Plátano",
+        "subtitulo": "Fruta",
+        "descripcion": "El platano siempre de Canarias.",
+        "detalles": "Un plátano maduro es una deliciosa fruta con un sabor dulce y una textura suave.",
+        "calorias": "89 Kcal",
+        "carbohidratos": "23g carbohidratos",
+        "proteina": "1.3g proteina",
+        "grasas": "0.3g grasas",
+        "grasas_saturadas": "0.1g grasas saturadas",
+        "azucares": "12g azucares",
+        "fibra": "2.6g fibra"
+       
+        
+    },
+    {
+        "img": "/assets/postres/tartaQueso.png",
+        "titulo": "Tarta de Queso",
+        "subtitulo": "Postre",
+        "descripcion": "Nuestra tarta de queso casera",
+        "detalles": "Una deliciosa tarta elaborada con queso cremoso y una base crujiente de galleta.",
+        "calorias": "300 Kcal",
+        "carbohidratos": "20g carbohidratos",
+        "proteina": "5g proteina",
+        "grasas": "22g grasas",
+        "grasas_saturadas": "12g grasas saturadas",
+        "azucares": "15g azucares",
+        "fibra": "1g fibra",
+        "gluten": "Gluten"
+      },
+      
+      {
+        "img": "/assets/postres/tiramisu.png",
+        "titulo": "Tiramisú",
+        "subtitulo":"Postre",
+        "descripcion": "Nuestro delicioso tiramisú casero.",
+        "detalles":"Un clásico postre italiano hecho con capas de bizcochos de soletilla empapados en café, crema de mascarpone y cacao en polvo espolvoreado por encima.",
+        "calorias": "280 Kcal",
+        "carbohidratos": "20g carbohidratos",
+        "proteina": "5g proteina",
+        "grasas": "20g grasas",
+        "grasas_saturadas": "12g grasas saturadas",
+        "azucares": "15g azucares",
+        "fibra": "1g fibra",
+        "gluten": "Gluten"
+      }
+      
+]

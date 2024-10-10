@@ -1,0 +1,46 @@
+[
+    {
+      "icon": "home-outline",
+      "name": "Home",
+      "redirectTo": "/tabs/home"
+    },
+    {
+      "icon": "clipboard-outline",
+      "name": "Nuestro menú",
+      "redirectTo": "/tabs/order"
+    },
+    {
+      "icon": "restaurant-outline",
+      "name": "¿Cómo funciona?",
+      "redirectTo": "/tabs/how"
+    },
+    {
+      "icon": "business-outline",
+      "name": "La Aparcería empresas",
+      "redirectTo": "/tabs/business"
+    }, 
+    {
+      "icon": "storefront-outline",
+      "name": "Sobre nosotros",
+      "redirectTo": "/tabs/who"
+    }, 
+    {
+      "icon": "help-circle-outline",
+      "name": "Preguntas frecuentes",
+      "redirectTo": "/tabs/faq"
+    }, 
+    {
+      "icon": "mail-outline",
+      "name": "Escríbenos",
+      "redirectTo": "/tabs/write"
+    },
+   
+    {
+      "icon": "newspaper-outline",
+      "name": "Blog",
+      "redirectTo": ""
+    }
+    
+    
+    
+  ]

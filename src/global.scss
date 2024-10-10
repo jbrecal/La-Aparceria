@@ -1,0 +1,170 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+:root {
+	--ion-color-primario: #38544d;
+	--ion-color-primario-rgb: 57,73,70;
+	--ion-color-primario-contrast: #ffffff;
+	--ion-color-primario-contrast-rgb: 255,255,255;
+	--ion-color-primario-shade: #32403e;
+	--ion-color-primario-tint: #4d5b59;
+}
+
+.ion-color-primario {
+	--ion-color-base: var(--ion-color-primario);
+	--ion-color-base-rgb: var(--ion-color-primario-rgb);
+	--ion-color-contrast: var(--ion-color-primario-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-primario-contrast-rgb);
+	--ion-color-shade: var(--ion-color-primario-shade);
+	--ion-color-tint: var(--ion-color-primario-tint);
+}
+
+:root {
+	--ion-color-beige: #f1f1d9;
+	--ion-color-beige-rgb: 241,241,217;
+	--ion-color-beige-contrast: #000000;
+	--ion-color-beige-contrast-rgb: 0,0,0;
+	--ion-color-beige-shade: #d4d4bf;
+	--ion-color-beige-tint: #f2f2dd;
+}
+
+.ion-color-beige {
+	--ion-color-base: var(--ion-color-beige);
+	--ion-color-base-rgb: var(--ion-color-beige-rgb);
+	--ion-color-contrast: var(--ion-color-beige-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-beige-contrast-rgb);
+	--ion-color-shade: var(--ion-color-beige-shade);
+	--ion-color-tint: var(--ion-color-beige-tint);
+}
+:root {
+	--ion-color-oliva: #819d6c;
+	--ion-color-oliva-rgb: 129,157,108;
+	--ion-color-oliva-contrast: #ffffff;
+	--ion-color-oliva-contrast-rgb: 0,0,0;
+	--ion-color-oliva-shade: #728a5f;
+	--ion-color-oliva-tint: #8ea77b;
+}
+
+.ion-color-oliva {
+	--ion-color-base: var(--ion-color-oliva);
+	--ion-color-base-rgb: var(--ion-color-oliva-rgb);
+	--ion-color-contrast: var(--ion-color-oliva-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-oliva-contrast-rgb);
+	--ion-color-shade: var(--ion-color-oliva-shade);
+	--ion-color-tint: var(--ion-color-oliva-tint);
+}
+:root {
+	--ion-color-coral: #e15732;
+	--ion-color-coral-rgb: 225,87,50;
+	--ion-color-coral-contrast: #ffffff;
+	--ion-color-coral-contrast-rgb: 0,0,0;
+	--ion-color-coral-shade: #c64d2c;
+	--ion-color-coral-tint: #e46847;
+}
+
+.ion-color-coral {
+	--ion-color-base: var(--ion-color-coral);
+	--ion-color-base-rgb: var(--ion-color-coral-rgb);
+	--ion-color-contrast: var(--ion-color-coral-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-coral-contrast-rgb);
+	--ion-color-shade: var(--ion-color-coral-shade);
+	--ion-color-tint: var(--ion-color-coral-tint);
+}
+:root {
+	--ion-color-amarillo: #f3b842;
+	--ion-color-amarillo-rgb: 243,184,66;
+	--ion-color-amarillo-contrast: #ffffff;
+	--ion-color-amarillo-contrast-rgb: 0,0,0;
+	--ion-color-amarillo-shade: #d6a23a;
+	--ion-color-amarillo-tint: #f4bf55;
+}
+
+.ion-color-amarillo {
+	--ion-color-base: var(--ion-color-amarillo);
+	--ion-color-base-rgb: var(--ion-color-amarillo-rgb);
+	--ion-color-contrast: var(--ion-color-amarillo-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-amarillo-contrast-rgb);
+	--ion-color-shade: var(--ion-color-amarillo-shade);
+	--ion-color-tint: var(--ion-color-amarillo-tint);
+}
+:root {
+	--ion-color-negro: #171717;
+	--ion-color-negro-rgb: 23,23,23;
+	--ion-color-negro-contrast: #ffffff;
+	--ion-color-negro-contrast-rgb: 255,255,255;
+	--ion-color-negro-shade: #141414;
+	--ion-color-negro-tint: #2e2e2e;
+}
+
+.ion-color-negro {
+	--ion-color-base: var(--ion-color-negro);
+	--ion-color-base-rgb: var(--ion-color-negro-rgb);
+	--ion-color-contrast: var(--ion-color-negro-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-negro-contrast-rgb);
+	--ion-color-shade: var(--ion-color-negro-shade);
+	--ion-color-tint: var(--ion-color-negro-tint);
+}
+:root {
+	--ion-color-blanco: #ffffff;
+	--ion-color-blanco-rgb: 255,255,255;
+	--ion-color-blanco-contrast: #000000;
+	--ion-color-blanco-contrast-rgb: 0,0,0;
+	--ion-color-blanco-shade: #e0e0e0;
+	--ion-color-blanco-tint: #ffffff;
+}
+
+.ion-color-blanco {
+	--ion-color-base: var(--ion-color-blanco);
+	--ion-color-base-rgb: var(--ion-color-blanco-rgb);
+	--ion-color-contrast: var(--ion-color-blanco-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-blanco-contrast-rgb);
+	--ion-color-shade: var(--ion-color-blanco-shade);
+	--ion-color-tint: var(--ion-color-blanco-tint);
+}
+*{
+	margin: 0, auto;
+}
+ion-input.custom.ios .input-bottom .helper-text,
+ion-input.custom.ios .input-bottom .counter,
+ion-input.custom.md .input-bottom .helper-text,
+ion-input.custom.md .input-bottom .counter {
+  color: var(--ion-color-primary);
+}

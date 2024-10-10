@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+ion-content{
+ 
+    padding-top: 2rem;
+}
+ion-content p{
+    
+    font-size: large;
+}
+
+
+ion-card{
+    
+    background-color: #819d6c;
+    width: 90%;
+    margin: 0 auto;
+    
+    
+}
+ion-card-title{
+    padding: 1rem;
+    margin-left: 1rem;
+    color: beige;
+    font-weight: 400;
+}
+.margin{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.frases_adicionales a{
+    text-decoration: none;
+    color: #38544d
+}
+.frases_adicionales{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+@media (min-width: 1181px) {
+    .container_logo {
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+    .logo{
+        width: 30%;
+        height: auto;
+    }
+    
+  
+  }
+  @media (max-width: 1181px) {
+    .container {
+        padding-top: 1rem;
+        
+      
+    }
+    .container_logo {
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+  
+  }
+}
+  @media (min-width: 1181px) {
+    .total {
+        width: 60%;
+        margin: 0 auto;
+        
+      
+    }
+  
+  }
+ 
+  .container_logo{
+    padding-top: 4rem;
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  .input{
+    height: 200px;
+  }
+  ion-button{
+    padding-bottom: 5rem;
+  }
+  ion-input.custom {
+  
+    --color: #819d6c;
+    --placeholder-color: #819d6c;
+    --placeholder-opacity: 0.8;
+    height: 100px;
+    --fill-color: #819d6c;
+    --padding-start: 15px;
+    
+  }

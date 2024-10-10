@@ -1,0 +1,46 @@
+<ion-content>
+  <div class="container_logo">
+    <img class="logo" src="/assets/iconos/logoPrimario.png" alt="">
+  </div>
+  
+  <div class="total">
+    <div class="container">
+    
+    </div>
+    <ion-card>
+      <ion-card-title>
+        <p>
+          Dejar un mensaje
+        </p>
+      </ion-card-title>
+  
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">
+            <p>Nombre</p>
+          </ion-label>
+          <ion-input [clearInput]="true" type="text"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">
+            <p>Correo electrónico</p>
+          </ion-label>
+          <ion-input [clearInput]="true" type="password" ></ion-input>
+          
+        </ion-item>
+        <br><br>
+        <ion-input class="custom" label="¿Cómo podemos ayudar?" label-placement="floating" fill="outline" placeholder="Introduce aquí el texto"></ion-input>
+      </ion-list>
+    </ion-card>
+    
+    <div class="margin">
+      <ion-button mode="ios" class="loggin_button" color="oliva" shape="round" >Enviar</ion-button>
+  
+
+      
+    </div>
+  </div>
+  
+  <app-footer></app-footer>
+</ion-content>

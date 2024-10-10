@@ -1,0 +1,139 @@
+<ion-content>
+    <ion-grid>
+        <section class="banner_1">
+            <ion-row>
+                <ion-col>
+                    <div class="background"></div>
+                </ion-col>
+            </ion-row>
+        </section>
+        <section class="banner_2">
+            <ion-row>
+                <ion-col class="tarjeta">
+                    <div class="titulo">
+                        <p>¿Cómo funciona?</p>
+                    </div>
+                    <div class="content">
+                        <p>Te lo ponemos muy fácil. Nosotros nos
+                            ocupamos de la comida; tu cuídate y
+                            disfruta de tu tiempo.</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col *ngFor="let tarjeta of banner_2_tarjeta" class="tarjeta" size="12" size-lg="3" size-md="6"
+                    size-sm="6" size-xs="12">
+                    <div class="iconos_centrados">
+                        <img class="moto" [src]="tarjeta.img" [alt]="tarjeta.titulo">
+                        <div class="titulo">
+                            <p>{{ tarjeta.titulo }}</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{ tarjeta.descripcion }}</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </section>
+        <section class="banner_3">
+            <div class="banner_3_margen">
+
+                <ion-row>
+
+                    <ion-col size="12" size-lg="6" size-md="4" size-sm="4" size-xs="12">
+                        <div class="banner_3_titulo">
+                            <img class="logo" src="/assets/fondos/Logo-trans.png" alt="">
+                            <h3>Conoce Nuestra Comida</h3>
+                            <p>
+                                Comida casera, saludable y mediterranea preparada por nuestros chefs todos los días.
+                            </p>
+
+                        </div>
+                    </ion-col>
+                    <ion-col size="2"></ion-col>
+
+                    <ion-col size="12" size-lg="4" size-md="3" size-sm="3" size-xs="12">
+                        <div class="slider-frame">
+                            <ul>
+                                <li><img src="/assets/platos/deliciosa-bruschetta-queso-carne-verduras-restaurante.png"
+                                        alt="">
+                                    <h3>Mediterranera</h3>
+                                    <p>Creemos en una dieta mediaterranea, con ingredientes locales y de termporada</p>
+                                </li>
+                                <li><img src="/assets/platos/plato-sopa-verduras-carne.png" alt="">
+                                    <h3>De La Abuela</h3>
+                                    <p>Una buena tortilla de patata, unas albondigas o un plato de cuchara, ¡los
+                                        clásicos que no pueden fallar.
+                                    </p>
+                                </li>
+                                <li><img src="/assets/platos/sabroso-plato-pasta-fettuccine-cubierto-queso-rallado-plato-blanco.png"
+                                        alt="">
+                                    <h3>Chef's Choice</h3>
+                                    <p>Un viaje grastronñomico donde encontrar opciones Street foody platos
+                                        diseñados por nuestros chefs.
+                                    </p>
+                                </li>
+                                <li><img src="/assets/platos/cuenco-blanco-lleno-ensalada-verduras-pollo-parrilla-pimenton-hojas-lechuga-salsa-ve-delicioso-sabroso.png"
+                                        alt="">
+                                    <h3>Veggie & Vegan</h3>
+                                    <p>Opciones plant based originales para todos los usuarios. ¿Quien dice que comer
+                                        vegano/vegetariano
+                                        es aburrido?</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </ion-col>
+                    <ion-col size="1"></ion-col>
+                </ion-row>
+            </div>
+        </section>
+        <div class="banner_4_color">
+        <section class="banner_4">
+            <ion-row>
+                <ion-col>
+                    <div class="titulo">
+                        <p>Nuestros valores</p>
+                    </div>
+
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col *ngFor="let tarjeta of banner_4_tarjeta" class="tarjeta" size="12" size-lg="4" size-md="4"
+                    size-sm="4" size-xs="12">
+                    <div class="iconos_centrados">
+                        <img class="iconos" [src]="tarjeta.img">
+                        <div class="titulo">
+                            <p>{{tarjeta.titulo}}</p>
+                        </div>
+                        <div class="subtitulo">
+                            {{tarjeta.subtitulo}}
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{tarjeta.descripcion}}
+                        </p>
+                    </div>
+
+                </ion-col>
+            </ion-row>
+
+        </section>
+    </div>
+        
+        <div class="boton_pedido">
+            <ion-button shape="round" color="oliva" class="boton__pedido" routerLink="/tabs/order" mode="ios">
+                Pide tu menú
+            </ion-button>
+        </div>
+        
+    </ion-grid>
+    <ion-fab class="fab"  vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="oliva" size="small">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </ion-fab-button>
+        </ion-fab>
+      
+    <app-footer></app-footer>
+</ion-content>

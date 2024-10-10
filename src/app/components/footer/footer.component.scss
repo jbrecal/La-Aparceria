@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #38544d;
+  font-family: 'Nunito', sans-serif;
+  color: #f1f1d9;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+}
+
+@media (max-width: 1181px) {
+  ion-footer {
+
+    display: none;
+  }
+
+}
+
+ion-input {
+  --background: #38544d;
+  --color: #f1f1d9;
+  --placeholder-color: #f1f1d9;
+  --placeholder-opacity: 0.8;
+  text-decoration: none;
+  color: #f1f1d9;
+  --padding-bottom: 10px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  --padding-top: 10px;
+  text-decoration: none;
+  
+  width: 100%;
+  
+  
+}
+
+.baja {
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+}
+
+.pagos {
+  width: 2.5rem;
+}
+
+.logo {
+  width: 12rem;
+}
+
+h3 {
+  padding-bottom: 1rem;
+}
+
+a {
+  padding-top: 0.5em;
+}
+.row_b{
+  padding-top: 3rem;
+  font-size: small;
+}

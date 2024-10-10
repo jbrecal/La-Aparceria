@@ -1,0 +1,62 @@
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <img class="card-img" [src]="img" alt="{{ titulo }}" />
+    <ion-card-header>
+      <ion-card-title color="oliva" class="card-titulo">{{ titulo }}</ion-card-title>
+      <ion-card-subtitle>{{ subtitulo }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="card-content">
+      <p>{{ detalles }}</p>
+      <br>
+      <p>{{ ingredientes}}</p>
+      <br>
+      <ion-row class="valores"><p>Valores nutricionales por 100g:</p></ion-row>
+      <br>
+      <ion-row>
+        <ion-col>
+          <ion-chip color="oliva" class="card-chip">
+            <ion-label>{{ calorias }}</ion-label>
+          </ion-chip>
+        </ion-col>
+        <ion-col>
+          <ion-chip color="oliva" class="card-chip">
+            <ion-label>{{ carbohidratos }}</ion-label>
+          </ion-chip>
+        </ion-col>
+        <ion-col>
+          <ion-chip color="oliva" class="card-chip">
+            <ion-label>{{ proteina }}</ion-label>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-chip color="oliva" class="card-chip">
+            <ion-label>{{ grasas }}</ion-label>
+          </ion-chip>
+        </ion-col>
+        <ion-col>
+          <ion-chip color="oliva" class="card-chip">
+            <ion-label>{{ grasas_saturadas }}</ion-label>
+          </ion-chip>
+        </ion-col>
+        <ion-col>
+          <ion-chip color="oliva" class="card-chip">
+            <ion-label>{{ azucares }}</ion-label>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button size="small" color="coral" (click)="dismiss()">
+      <ion-icon name="close"></ion-icon>
+     
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-button class="ion-padding" (click)="dismiss()" color="oliva" shape="round">Volver</ion-button>
+  
+
+</ion-content>

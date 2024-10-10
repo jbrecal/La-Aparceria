@@ -1,0 +1,99 @@
+*{
+  font-family: 'Nunito', sans-serif;
+}
+
+#container p{
+    font-family: 'Nunito', sans-serif;
+}
+ion-header {
+    margin: 0;
+    padding: 0;
+  
+    ion-toolbar {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+ 
+  ion-content {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .avatar{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .titulo{
+    margin-bottom: 2.5rem;
+  }
+
+@media (min-width: 1181px) {
+  ion-header {
+    display: none;
+  }
+  ion-list{
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 1181px) {
+  .web {
+    display: none;
+    
+  }
+ 
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background-color: #38544d;
+
+}
+a{
+  text-decoration: none;
+  color: #f1f1d9
+
+}
+.logo{
+  width: 10rem;
+  margin-left: 1rem;
+
+}
+.cesta{
+  width: 3rem;
+  padding: 1rem;
+}
+.logIn{
+  width: 3rem;
+  margin-right: 1rem;
+}
+.flex__centrado{
+  display: flex;
+  gap: 4rem;
+  font-size: 105%;
+  padding-right: 5rem;
+}
+.flex__der{
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      
+
+}
+.logo_tit{
+  color: #f1f1d9;
+  padding-left: 1rem;
+}
